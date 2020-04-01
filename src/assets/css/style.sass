@@ -1,0 +1,172 @@
+@import libs
+$primary-font: all-round-gothic, sans-serif
+$secondary-font: Roboto, sans-serif
+$primary-font2: 'Poppins', sans-serif
+
+@font-face
+  font-family: 'all-round-gothic'
+  src: url(../../assets/fonts/allroundgothic-book-webfont.eot)
+  src: url(../../assets/fonts/allroundgothic-book-webfont.woff2) format('woff2'),
+  url(../../assets/fonts/allroundgothic-book-webfont.woff) format('woff')
+  font-weight: normal
+  font-style: normal
+
+
+body
+  background-image: url("../../assets/img/bg/bg.jpg")
+  background-position: center center
+  background-attachment: fixed
+  background-size: cover
+  overflow-x: hidden
+  font-family: Poppins, sans-serif
+  color: white
+  min-width: 320px
+  overflow-y: hidden
+  min-height: 600px
+
+  a
+    text-decoration: none
+
+
+.smallTitle
+  border: 1px solid #ffffff
+  padding: 15px 50px
+  border-radius: 50px
+  background: none
+  color: #ffffff
+  margin: 20px 0
+  font-weight: bold
+  font-size: 20px
+  font-family: $primary-font2
+
+  &:focus
+    outline: none
+
+.contact
+  padding: 0 80px 40px 80px
+  .contactTitle
+    padding-bottom: 5px
+    font-weight: bold
+  a, b
+    color: white
+    font-weight: 300
+
+section
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100vh
+  .center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 80px 0 80px
+    flex: 1
+
+
+    h2.bigTitle
+      font-size: 55px
+      font-family: $primary-font2
+      font-weight: 400
+
+span
+  padding-top: 0
+
+.grow
+  img
+    height: 70vh
+
+.bottomBar
+  font-size: 20px
+  color: white
+  font-family: $primary-font
+  display: flex
+  justify-content: space-between
+
+  span
+    padding: 0 80px 40px 80px
+
+    a, b
+      color: white
+      font-weight: 300
+
+  .socials
+    a
+      color: white
+      margin-right: 15px
+      font-size: 15px
+
+      &:last-child
+        margin-right: 0
+
+@media screen and (max-width: 1200px)
+  section
+
+    .center
+      padding: 0 40px 0 40px
+      .logo
+        text-align: right
+        img
+          height: 60vh
+  .bottomBar
+    font-size: 14px
+    span
+      padding: 0 40px 40px 40px
+
+
+@media screen and (max-width: 768px)
+  section
+
+    .center
+      flex-direction: column-reverse
+      align-items: center
+      justify-content: center
+      text-align: center
+
+
+      .logo
+        align-items: center
+        text-align: unset
+      .grow
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+      .logo
+        flex-grow: 1
+
+      .text
+        flex-grow: 2
+
+      h1
+        font-size: 18px
+      h2.bigTitle
+        font-size: 30px
+
+  .bottomBar
+    font-size: 18px
+    flex-direction: column
+    text-align: center
+  img
+    max-width: 100%
+
+@media screen and (max-width: 576px)
+  section
+
+    .text
+      position: unset
+      margin: 60px 0 60px 0
+
+      h1
+        font-size: 18px
+
+  .bottomBar
+    span
+      font-size: 16px
+      padding-bottom: 20px
+
+@media (max-height: 768px)
+  section
+    .text
+      position: unset
+      margin: 40px 0 40px 0
